@@ -12,6 +12,9 @@ def load_library(file)
     if !emoticon_hash[name_of_emoticon][:english]
       emoticon_hash[name_of_emoticon][:english] = ""
     end
+    if !emoticon_hash[name_of_emoticon][:japanese]
+      emoticon_hash[name_of_emoticon][:japanese] = ""
+    end
     binding.pry
   end
 end
