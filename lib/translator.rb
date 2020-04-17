@@ -1,8 +1,8 @@
 require 'pry'
 require "yaml"
 
-def load_library
-  # code goes here
+def load_library(file)
+  loaded_hash = YAML.load_file('fruits.yml')
 end
 
 def get_japanese_emoticon
