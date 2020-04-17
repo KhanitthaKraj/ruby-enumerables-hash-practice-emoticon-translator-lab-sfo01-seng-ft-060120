@@ -26,6 +26,10 @@ def get_english_meaning(file, japanese_emoticon)
   emoticon_name = ""
   
   emoticon_hash.each do |name, value|
+    value.each do |emoticon|
+      if japanese_emoticon == emoticon[1]
+        emoticon_name = name
+    end
   end
 end
 
