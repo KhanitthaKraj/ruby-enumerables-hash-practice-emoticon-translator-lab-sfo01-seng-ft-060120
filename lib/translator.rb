@@ -21,14 +21,14 @@ end
 
 
 
-def get_english_meaning(file, japanese_emoticon == element[1])
+def get_english_meaning(file, japanese_emoticon)
   emoticon_hash = load_library("./lib/emoticons.yml")
   emoticon_name = ""
   
   emoticon_hash.each do |name, value|
     value.each do |element|
       if japanese_emoticon == element[1]
-      binding.pry
+        binding.pry
       end
     end
   end
