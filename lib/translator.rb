@@ -29,7 +29,7 @@ def get_english_meaning(file, japanese_emoticon)
     value.each do |element|
       if japanese_emoticon == element[1]
         emoticon_name = name
-        binding.pry
+        #binding.pry
       end
     end
   end
