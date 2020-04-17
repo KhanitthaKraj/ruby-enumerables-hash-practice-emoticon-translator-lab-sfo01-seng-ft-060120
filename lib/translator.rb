@@ -16,6 +16,7 @@ def load_library(file)
       emoticon_hash[name_of_emoticon][:japanese] = emoticons[1]
     end
   end
+  emoticon_hash
 end
 
 
