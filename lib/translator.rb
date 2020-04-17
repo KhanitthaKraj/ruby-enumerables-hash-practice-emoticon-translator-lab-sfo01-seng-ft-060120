@@ -6,8 +6,8 @@ def load_library(file)
   emoticon_hash = {}
   
   loaded_hash.each do |name_of_emoticon, emoticons|
-    if !loaded_hash.each[name_of_emoticon]
-      loaded_hash.each[name_of_emoticon] = {}
+    if !loaded_hash[name_of_emoticon]
+      loaded_hash[name_of_emoticon] = {}
     end
     binding.pry
   end
