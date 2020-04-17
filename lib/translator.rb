@@ -8,9 +8,10 @@ def load_library(file)
   loaded_hash.each do |name_of_emoticon, emoticons|
     if !emoticon_hash[name_of_emoticon]
       emoticon_hash[name_of_emoticon] = {}
-       binding.pry
     end
-
+    if !emoticon_hash[name_of_emoticon][:english]
+      emoticon_hash[name_of_emoticon][:english] = ""
+    end
   end
 end
 
