@@ -6,7 +6,7 @@ def load_library(file)
   emoticon_hash = {}
   
   loaded_hash.each do |name_of_emoticon, emoticons|
-    
+    if 
     binding.pry
   end
 end
