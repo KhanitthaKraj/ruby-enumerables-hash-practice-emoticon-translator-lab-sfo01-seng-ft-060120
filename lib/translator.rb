@@ -32,7 +32,10 @@ def get_english_meaning(file, japanese_emoticon)
       end
     end
   end
-  emoticon_name || "Sorry, that emoticon was not found"
+  if emoticon_name.empty?
+    return "Sorry, that emoticon was not found"
+  end
+  emoticon_name 
 end
 
 
