@@ -38,7 +38,7 @@ end
 
 def get_japanese_emoticon(file, english_emoticon)
   emoticon_hash = load_library("./lib/emoticons.yml")
-  
+  japanese_version = ""
   sorry_message = "Sorry, that emoticon was not found"
   
   emoticon_hash.each do |name, value|
