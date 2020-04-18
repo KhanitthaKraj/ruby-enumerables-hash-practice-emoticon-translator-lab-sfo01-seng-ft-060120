@@ -24,7 +24,7 @@ end
 def get_english_meaning(file, japanese_emoticon)
   emoticon_hash = load_library("./lib/emoticons.yml")
   emoticon_name = ""
-  
+  sorry_message = "Sorry, that emoticon was not found"
   emoticon_hash.each do |name, value|
     value.each do |element|
       if japanese_emoticon == element[1]
@@ -33,7 +33,7 @@ def get_english_meaning(file, japanese_emoticon)
     end
   end
   if emoticon_name.empty?
-    return "Sorry, that emoticon was not found"
+    sorry_message
   end
   emoticon_name 
 end
