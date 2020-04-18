@@ -50,6 +50,9 @@ def get_japanese_emoticon(file, english_emoticon)
       japanese_version = flatten_value[3]
     end
   end
+  if japanese_version.empty?
+    return sorry_message
+  end
   japanese_version 
 end
 
