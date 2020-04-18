@@ -46,7 +46,7 @@ def get_japanese_emoticon(file, english_emoticon)
   
   emoticon_hash.each do |name, value|
     flatten_value = value.flatten
-    flatten_value.each do |emoticon|
+    flatten_value.each do |element|
       if english_emoticon == emoticon[1]
         puts flatten_value[3]
       end
