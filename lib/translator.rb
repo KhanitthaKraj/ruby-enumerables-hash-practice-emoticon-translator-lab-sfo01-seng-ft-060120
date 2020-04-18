@@ -42,11 +42,12 @@ end
 
 def get_japanese_emoticon(file, english_emoticon)
   emoticon_hash = load_library("./lib/emoticons.yml")
-  japanese_version = ""
+  japanese_version = emoticon[1] = ""
   
   emoticon_hash.each do |name, value|
     value.each do |emoticon|
-      if english_emoticon == 0
+      if english_emoticon == emoticon[0]
+        japanese_version = emoticon[1]
         binding.pry
      end
     end
