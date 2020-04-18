@@ -50,6 +50,7 @@ def get_japanese_emoticon(file, english_emoticon)
       if english_emoticon == emoticon[1]
         japanese_version = emoticon[3]
       end
+      binding.pry
     end
   end
   japanese_version
