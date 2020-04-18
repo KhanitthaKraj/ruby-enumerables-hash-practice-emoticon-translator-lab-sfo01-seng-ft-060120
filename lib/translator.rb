@@ -56,5 +56,3 @@ def get_japanese_emoticon(file, english_emoticon)
   end
   japanese_version 
 end
-
-
