@@ -42,7 +42,7 @@ end
 
 def get_japanese_emoticon(file, english_emoticon)
   emoticon_hash = load_library("./lib/emoticons.yml")
-  japanese_version = emoticon[1] = ""
+  japanese_version = ""
   
   emoticon_hash.each do |name, value|
     value.each do |emoticon|
