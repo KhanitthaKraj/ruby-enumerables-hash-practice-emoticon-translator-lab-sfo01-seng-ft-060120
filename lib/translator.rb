@@ -52,7 +52,7 @@ def get_japanese_emoticon(file, english_emoticon)
      end
     end
   end
-  
+  japanese_version
 end
 
 
