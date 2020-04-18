@@ -48,12 +48,11 @@ def get_japanese_emoticon(file, english_emoticon)
     flatten_value = value.flatten
     flatten_value.each do |element|
       if english_emoticon == flatten_value[1]
-        puts flatten_value[3]
+        japanese_version = flatten_value[3]
       end
-      binding.pry
     end
   end
-  
+  japanese_version 
 end
 
 
