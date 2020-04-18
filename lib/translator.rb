@@ -49,7 +49,6 @@ def get_japanese_emoticon(file, english_emoticon)
     if english_emoticon == flatten_value[1]
       japanese_version = flatten_value[3]
     end
-    end
   end
   japanese_version 
 end
