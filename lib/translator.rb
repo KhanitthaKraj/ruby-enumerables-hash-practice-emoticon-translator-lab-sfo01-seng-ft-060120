@@ -46,9 +46,9 @@ def get_japanese_emoticon(file, english_emoticon)
   
   emoticon_hash.each do |name, value|
     value.each do |emoticon|
-      if english_emoticon == 0
+      #if english_emoticon == 0
         binding.pry
-      end
+     # end
     end
   end
   
